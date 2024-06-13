@@ -2549,3 +2549,62 @@ ol {
     text-align: left;
   }
 }/*# sourceMappingURL=portfolio.css.map */
+
+
+
+
+/* =============================== */
+/* ======== Спадаюче меню ======== */
+
+.dropdown {
+  position: absolute;
+}
+
+/* .mainmenubtn {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding:20px;
+  margin-top:20px;
+} */
+
+/* .mainmenubtn:hover {
+  background-color: red;
+  } */
+  
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-child {
+  display: none;
+  background-color: var(--comand-color);
+  min-width: auto;
+}
+.dropdown-child a {
+  /* color: var(--second-color-font); */
+  color: var(--primary-color-font);
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.dropdown:hover .dropdown-child {
+  position:fixed;
+  display: block;
+  top: 68px;
+  margin-left: -16px;
+    /* display: flex;
+  flex-wrap: wrap; */
+  /* align-items: top; */
+}
+
+.dropdown-list:hover {
+  /* color: var(--primary-color-font); */
+  color: var(--second-color-font);
+}

@@ -14,6 +14,8 @@
   --color-btn-form: #188CE8;
   --primary-font: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
+
+  --parent-subtitle: #21618C;
 }
 
 .visually-hidden {
@@ -1908,4 +1910,31 @@ ol {
 .dropdown-list:hover {
   /* color: var(--primary-color-font); */
   color: var(--second-color-font);
+}
+
+
+
+
+/* ======== Поради педагогів батькам ======== */
+.parent-title {
+  padding-bottom: 50px;
+  color: var(--color-btn-form);
+}
+
+.parent-subtitle {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--parent-subtitle);
+}
+
+.parent-img {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.parent-paragraph {
+  /* font-weight: 500; */
+  font-size: 16px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
 }

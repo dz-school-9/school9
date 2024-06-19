@@ -16,6 +16,8 @@
   --second-font: "Raleway", sans-serif;
 
   --parent-subtitle: #21618C;
+  --text-logo: #3c3e79;
+  --logo-color: #fdd333;
 }
 
 .visually-hidden {
@@ -101,7 +103,7 @@ ol {
 
 .hero-text {
   font-weight: 900;
-  font-size: 24px;
+  font-size: 12px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -111,7 +113,7 @@ ol {
 }
 @media screen and (min-width: 480px) {
   .hero-text {
-    font-size: 24px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -126,15 +128,14 @@ ol {
   }
 }
 
-.hero-align {
-  margin-bottom: 30px;
+/* .hero-align {
   max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero-align {
     max-width: 696px;
   }
-}
+} */
 
 .hero-btn {
   background-color: var(--second-color-font);
@@ -740,12 +741,14 @@ ol {
 /* ==== Кінець підписання в футері ==== */
 .nav-base-text {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  text-transform: uppercase;
 }
 
 .menu-link {
@@ -772,6 +775,7 @@ ol {
   font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  /* padding-top: 22px; */
 }
 
 /* ==== Іконка в навігації ==== */
@@ -782,7 +786,8 @@ ol {
 
 /* ==== Іконка в навігації ====  */
 .mail-tel-text {
-  color: var(--paragraph-color-font);
+  color: var(--hero-color-font);
+  /* padding-top: 22px; */
 }
 
 .mobile-menu-btn-close {
@@ -966,12 +971,22 @@ ol {
   transform: translateX(50%);
 }
 
+.list-item-nav {
+  /* margin-bottom: 8px; */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 @media screen and (min-width: 480px) {
   .header-container {
     justify-content: flex-start;
   }
   .menu-container {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .navigation-list {
+    margin-left: 24px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -981,7 +996,8 @@ ol {
   .navigation-list {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    /* margin-left: auto; */
+    margin-left: 44px;
   }
   .mobile-menu-btn {
     display: none;
@@ -996,9 +1012,12 @@ ol {
   .mail-tel-text {
     display: flex;
     align-items: center;
+    padding-top: 8px;
   }
   .list-item-nav {
-    margin-bottom: 10px;
+    /* margin-bottom: 8px; */
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1016,11 +1035,14 @@ ol {
   .mail-tel-text {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 22px;
+    padding-bottom: 12px;
   }
   .contact-number {
     margin-left: 0;
+  }
+  .navigation-list {
+    margin-left: 52px;
   }
 }
 .hero-title {
@@ -1054,7 +1076,8 @@ ol {
 @media screen and (min-width: 1200px) {
   .hero-background {
     max-width: 1600px;
-    max-height: 600px;
+    min-height: auto;
+    /* max-height: 600px; */
     /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg"); */
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-background.jpg");
     background-size: 1600px 600px;
@@ -1064,13 +1087,19 @@ ol {
 }
 
 .hero-padding {
-  padding-top: 118px;
-  padding-bottom: 118px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+@media screen and (min-width: 768px) {
+  .hero-padding {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero-padding {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 144px;
+    padding-bottom: 144px;
   }
 }
 
@@ -1859,9 +1888,6 @@ ol {
 /* =============================== */
 /* ======== Спадаюче меню ======== */
 
-.dropdown {
-  position: absolute;
-}
 
 /* .mainmenubtn {
   background-color: red;
@@ -1900,17 +1926,61 @@ ol {
 .dropdown:hover .dropdown-child {
   position:fixed;
   display: block;
-  top: 68px;
-  margin-left: -16px;
     /* display: flex;
   flex-wrap: wrap; */
   /* align-items: top; */
+}
+@media screen and (min-width: 480px) {
+  .dropdown:hover .dropdown-child {
+    top: 288px;
+    margin-left: -48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-child {
+    top: 112px;
+    margin-left: -44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dropdown:hover .dropdown-child {
+    top: 112px;
+    margin-left: -16px;
+  }
 }
 
 .dropdown-list:hover {
   /* color: var(--primary-color-font); */
   color: var(--second-color-font);
 }
+
+
+
+
+/* Меню для мобільній версії */
+.mobile-menu {
+  text-align: center;
+}
+.dropdown-mobile-menu {
+  position: fixed;
+  top: 224px;
+  display: none;
+  width: auto;
+  height: auto;
+  background-color: yellow;
+}
+.mobile-menu:hover .dropdown-mobile-menu {
+  display: block;
+}
+
+
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+
 
 
 
@@ -1954,4 +2024,284 @@ ol {
   width: 560px;
   height: 315px;
   padding: 10px 10px 10px 10px;
+}
+
+
+
+
+/* ======== HEADER ======== */
+
+/* Header position */
+/* .hero-position {
+  position: absolute;
+} */
+/* .header-position {
+
+} */
+
+/* @media screen and (min-width: 480px) {
+  .header-position {
+    top: -300px;
+  }
+} */
+/* @media screen and (min-width: 768px) {
+  .header-position {
+    top: -320px;
+  }
+} */
+/* @media screen and (min-width: 1200px) {
+  .header-position {
+    top: -500px;
+  }
+} */
+
+
+
+
+/* ============================================================== */
+/* ============================================================== */
+/* ============================================================== */
+/* ================ Весь Хедер ================ */
+.header-test10 {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .header-test10 {
+    display: flex;
+  }
+}
+
+/* ============ В Хедері зліва логотип і напис ============ */
+.header-test11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--logo-color); 
+
+}
+@media screen and (min-width: 480px) {
+  .header-test11 {
+    width: 480px;
+    height: 176px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-test11 {
+    flex-wrap: wrap;
+    
+    width: 240px;
+    height: 232px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-test11 {
+    width: 256px;
+    height: 176px;
+  }
+}
+
+
+/* ==== В Хедері див справа пошта, соц.мережі і меню ==== */
+.header-test12 {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .header-test12 {
+    width: 480px;
+    height: 232px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-test12 {
+    width: 528px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-test12 {
+    width: 944px;
+    height: 176px;
+  }
+}
+
+
+/* ==== В Хедері див справа пошта, соц.мережі ==== */
+.header-test13 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 480px;
+  height: 56px;
+
+  background-color: var(--text-logo);
+}
+/* Розташування пошти та соц.мереж */
+.header-test15 {
+  display: flex;  
+}
+.header-test16 {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding-left: 20px; */
+}
+.header-test17 {
+  padding-right: 16px;
+}
+.header-test18 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@media screen and (max-width: 479px) {
+  .header-test13 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header-test13 {
+    width: 480px;
+  }
+  .header-test18 {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-test13 {
+    width: 528px;
+  }
+  .header-test18 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-test13 {
+    width: 944px;
+  }
+  .header-test17 {
+    padding-right: 16px;
+  }
+  .header-test18 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .header-test19 {
+    padding-top: 12px;
+  }
+}
+
+
+/* ==== В Хедері див меню ==== */
+.header-test14 {
+  width: 480px;
+  height: 56px;
+
+  background-color: var(--hero-color-font);
+}
+@media screen and (max-width: 479px) {
+  .header-test14 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header-test14 {
+    width: 480px;
+    height: 176px;
+  }
+  .header-test20 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-test14 {
+    width: 528px;
+    height: 176px;
+  }
+  .header-test20 {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-test14 {
+    width: 944px;
+    height: 120px;
+  }
+  .header-test20 {
+    width: 800px;
+  }
+}
+
+
+
+
+
+
+/* ============================================================== */
+/* ============================================================== */
+/* ============================================================== */
+
+
+
+/* .header-logo-img {
+  margin-left: auto;
+  margin-right: auto;
+} */
+.header-logo-text {
+  font-size: 16px;
+  color: var(--text-logo);
+  text-transform: uppercase;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Соц.мережі в header =====  */
+.social-list-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-top: 12px; */
+}
+
+.social-list-header > .social-list-icons-header:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-link-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-social-footer);
+  border-radius: 50%;
+  color: var(--hero-color-font);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-list-link-header:hover, .social-list-link-header:focus {
+  color: var(--hero-color-font);
+  background-color: var(--second-color-font);
+  cursor: pointer;
+}
+
+.social-icon-size-header {
+  max-width: 12px;
+  max-height: 12px;
+  fill: currentColor;
 }

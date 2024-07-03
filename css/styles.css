@@ -19,6 +19,8 @@
   --parent-subtitle: #21618C;
   --text-logo: #3c3e79;
   --logo-color: #fdd333;
+
+  --color-page-information: #F0E68C;
 }
 
 /* ================================================ */
@@ -277,16 +279,17 @@ ol {
 } */
 @media screen and (min-width: 480px) {
   .navigation-list {
-    margin-left: 24px;
+    margin-left:14px;
     display: flex;
     flex-wrap: wrap;
-    width: 480px;
+    width: 500px;
   }
 }
 @media screen and (min-width: 768px) {
   .navigation-list {
     align-items: center;
-    margin-left: 44px;
+    margin-left: 24px;
+    width: 500px;
   }
     /* .navigation-list-contact {
     display: block;
@@ -331,8 +334,8 @@ ol {
 }
 @media screen and (min-width: 480px) {
   .nav-base-text {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -387,7 +390,7 @@ ol {
   position: relative;
   display: inline-block;
 }
-.dropdown-child {
+.dropdown-child-parent {
   display: none;
   background-color: var(--comand-color);
   min-width: auto;
@@ -398,7 +401,7 @@ ol {
   border-bottom: 2px solid var(--paragraph-color-font);
   border-radius: 0 0 12px 12px;
 }
-.dropdown-child a {
+.dropdown-child-parent a {
   color: var(--primary-color-font);
   padding: 8px;
   text-decoration: none;
@@ -409,27 +412,27 @@ ol {
   line-height: 1.14;
   letter-spacing: 0.02em;
  }
-.dropdown:hover .dropdown-child {
+.dropdown:hover .dropdown-child-parent {
   position:fixed;
   display: block;
   z-index: 10;
 }
 @media screen and (min-width: 480px) {
-  .dropdown:hover .dropdown-child {
-    top: 288px;
+  .dropdown:hover .dropdown-child-parent {
+    top: 348px;
     margin-left: -48px;
     width: 160px;
   }
 }
 @media screen and (min-width: 768px) {
-  .dropdown:hover .dropdown-child {
-    top: 112px;
+  .dropdown:hover .dropdown-child-parent {
+    top: 172px;
     margin-left: -44px;
     width: 180px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .dropdown:hover .dropdown-child {
+  .dropdown:hover .dropdown-child-parent {
     top: 112px;
     margin-left: -16px;
   }
@@ -463,7 +466,7 @@ ol {
   display: block;
 }
 
-.dropdown-child-mobile {
+.dropdown-child-parent-mobile {
   display: none;
   background-color: var(--comand-color);
   min-width: auto;
@@ -474,7 +477,7 @@ ol {
   border-bottom: 2px solid var(--paragraph-color-font);
   border-radius: 0 12px 12px 12px;
 }
-.dropdown-child-mobile a {
+.dropdown-child-parent-mobile a {
   color: var(--primary-color-font);
   padding: 8px;
   text-decoration: none;
@@ -486,12 +489,12 @@ ol {
   letter-spacing: 0.02em;
   
  }
-.dropdown:hover .dropdown-child-mobile,
-.dropdown:focus .dropdown-child-mobile {
+.dropdown:hover .dropdown-child-parent-mobile,
+.dropdown:focus .dropdown-child-parent-mobile {
   position:fixed;
   display: block;
-  top: 412px;
-  margin-left: 64px;
+  top: 460px;
+  margin-left: 68px;
 }
 
 @media screen and (min-width: 480px) {
@@ -2250,6 +2253,54 @@ ol {
 }
 
 
+
+
+/* ======== Прозорість та інформаційна відкритість ======== */
+.color-page-information {
+  background-color: var(--color-page-information);
+}
+.color-information-link {
+  color: var(--parent-subtitle);
+}
+
+.section-information {
+  padding-top: 60px;
+}
+.section-information:first-child {
+  padding-top: 0;
+}
+
+.information-title {
+  text-align: center;
+  padding-bottom: 24px;
+}
+.information-subtitle-first {
+  text-align: left;
+  padding-bottom: 24px;
+}
+.information-subtitle {
+  text-align: left;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.list-item-information {
+  padding-top: 12px;
+}
+.list-item-information:first-child {
+  padding-top: 0;
+}
+
+.link-big-title {
+  text-align: center;
+}
+.statut {
+  color: var(--parent-subtitle);
+}
+
+.list-license {
+  padding-bottom: 48px;
+}
 
 /* ============================================================== */
 /* ============================================================== */

@@ -274,9 +274,6 @@ ol {
 .navigation-list {
   display: none;
 }
-/* .navigation-list-contact {
-  display: none;
-} */
 @media screen and (min-width: 480px) {
   .navigation-list {
     margin-left:14px;
@@ -291,20 +288,12 @@ ol {
     margin-left: 24px;
     width: 500px;
   }
-    /* .navigation-list-contact {
-    display: block;
-    margin-left: auto;
-  } */
 }
 @media screen and (min-width: 1200px) {
   .navigation-list {
     margin-left: 52px;
     width: 800px
   }
-  /* .navigation-list-contact {
-    display: flex;
-    height: 80px;
-  } */
 }
 
 
@@ -371,21 +360,7 @@ ol {
 
 
 
-/* ==== СПАДАЮЧЕ МЕНЮ ==== */
-
-/* .mainmenubtn {
-  background-color: red;
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding:20px;
-  margin-top:20px;
-} */
-
-/* .mainmenubtn:hover {
-  background-color: red;
-  } */
-  
+/* ==== СПАДАЮЧЕ МЕНЮ ==== */  
 .dropdown {
   position: relative;
   display: inline-block;
@@ -1737,7 +1712,6 @@ ol {
 @media screen and (min-width: 480px) {
   .education-management {
     width: 450px;
-    /* height: 460px; */
     height: auto;
   }
 }
@@ -1757,7 +1731,6 @@ ol {
   }
   .education-management {
     width: 354px;
-    /* height: 374px; */
     height: auto;
   }
 }
@@ -1773,7 +1746,6 @@ ol {
   }
   .education-management {
     width: 270px;
-    /* height: 260px; */
     height: auto;
   }
 }
@@ -1926,7 +1898,7 @@ ol {
     outline: none;
     margin: 0 0 0 12px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
 
 
 

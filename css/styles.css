@@ -2274,5 +2274,23 @@ ol {
   padding-bottom: 48px;
 }
 
+
+
+
+/* ======== На головній сторінці, медсестра та вакцини ======== */
+.yellow {
+  background-color: yellow;
+}
+
+.vaccine {
+  display: flex;
+  align-items: center;
+}
+.vaccine-image {
+  width: 44%;
+  margin-right: 16px;
+  border-radius: 16px;
+}
+
 /* ============================================================== */
 /* ============================================================== */

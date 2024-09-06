@@ -2317,5 +2317,63 @@ ol {
   border-radius: 16px;
 }
 
+
+
+
+/* ======== Сторінка дистанційного навчання, розклад занять ======== */
+.timetable-title {
+  padding-bottom: 24px;
+  color: var(--color-btn-form);
+}
+.timetable-dates {
+  text-align: center;
+  padding-bottom: 24px;
+  color: var(--parent-subtitle);
+}
+.lessons-timetable {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (min-width: 480px) {
+  .lessons-timetable {
+    flex-wrap: nowrap;
+  }
+}
+.day-padding {
+  display: block;
+  padding-left: 16px;
+}
+@media screen and (min-width: 1200px) {
+  .day-padding {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .lessons-timetable {
+    display: block;
+    text-align: center;
+  }
+}
+.day-distance {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 600;
+  padding-bottom: 8px;
+  text-align: left;
+}
+.day-distance:last-child {
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 480px) {
+  .day-distance:last-child {
+  padding-bottom: 0;
+}
+
+
+.lessons-image {
+  height: 150px;
+}
+
 /* ============================================================== */
 /* ============================================================== */

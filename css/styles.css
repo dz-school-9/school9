@@ -2367,7 +2367,13 @@ ol {
 }
 @media screen and (min-width: 480px) {
   .day-distance:last-child {
-  padding-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .day-distance:last-child {
+    padding-bottom: 24px;
+  }
 }
 
 
@@ -2375,5 +2381,4 @@ ol {
   height: 150px;
 }
 
-/* ============================================================== */
 /* ============================================================== */

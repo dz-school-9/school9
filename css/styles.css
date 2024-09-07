@@ -60,12 +60,28 @@
   }
 }
 
-.section {
+.section-first {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.section-middle {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section-last {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .section {
+  .section-first {
+    padding-top: 94px;
+    padding-bottom: 60px;
+  }
+  .section-middle {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .section-last {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -1651,6 +1667,12 @@ ol {
 .comand-bg-color {
   background-color: var(--comand-color);
 }
+.comand-bg-color:nth-child(2n+1) {
+  background-color: var(--hero-color-font);
+}
+.comand-bg-color:last-child {
+  background-color: var(--border-portfolio);
+}
 
 .team-location {
   /* display: block; */
@@ -2206,7 +2228,21 @@ ol {
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
-
+@media screen and (min-width: 480px) {
+  .parent-paragraph {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .parent-paragraph {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .parent-paragraph {
+    font-size: 24px;
+  }
+}
 
 
 
@@ -2348,7 +2384,7 @@ ol {
   margin-right: 16px;
   border-radius: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .vaccine {
     display: flex;
     align-items: center;

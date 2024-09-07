@@ -2214,17 +2214,40 @@ ol {
 .psychology-video {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .psychology-video-element iframe {
-  width: 560px;
-  height: 315px;
+  width: 100%;
+  height: auto;
   padding: 10px 10px 10px 10px;
+  border-radius: 24px;
 }
-
-
+@media screen and (min-width: 480px) {
+  .psychology-video-element iframe {
+    width: 464px;
+    height: 261px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .psychology-video-element iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .psychology-video-element iframe {
+    width: 464px;
+    height: 261px;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .psychology-video-element iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
 
 
 /* ======== Прозорість та інформаційна відкритість ======== */
@@ -2307,16 +2330,33 @@ ol {
   }
 }
 
-.vaccine {
+/* .vaccine {
   display: flex;
   align-items: center;
-}
-.vaccine-image {
+} */
+/* .vaccine-image {
   width: 44%;
   margin-right: 16px;
   border-radius: 16px;
+} */
+.vaccine {
+  display: block;
+  text-align: left;
 }
-
+.vaccine-image {
+  width: 100%;
+  margin-right: 16px;
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .vaccine {
+    display: flex;
+    align-items: center;
+  }
+  .vaccine-image {
+    width: 44%;
+  }
+}
 
 
 
@@ -2379,6 +2419,7 @@ ol {
 
 .lessons-image {
   height: 150px;
+  border-radius: 12px;
 }
 
 /* ============================================================== */

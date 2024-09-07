@@ -2413,6 +2413,9 @@ ol {
   color: var(--color-btn-form);
 }
 .timetable-dates {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 600;
   text-align: center;
   padding-bottom: 24px;
   color: var(--parent-subtitle);
@@ -2422,9 +2425,10 @@ ol {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .lessons-timetable {
     flex-wrap: nowrap;
+    align-items: center;
   }
 }
 .day-padding {
@@ -2443,7 +2447,7 @@ ol {
   }
 }
 .day-distance {
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 600;
   padding-bottom: 8px;
@@ -2452,7 +2456,7 @@ ol {
 .day-distance:last-child {
   padding-bottom: 24px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .day-distance:last-child {
     padding-bottom: 0;
   }
@@ -2460,6 +2464,9 @@ ol {
 @media screen and (min-width: 1200px) {
   .day-distance:last-child {
     padding-bottom: 24px;
+  }
+  .day-distance {
+    text-align: center;
   }
 }
 

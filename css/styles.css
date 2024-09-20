@@ -2412,32 +2412,24 @@ ol {
   padding-bottom: 16px;
 }
 .medicine-vpo-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.medicine-vpo {
   width: 100%;
   height: auto;
   padding: 10px 10px 10px 10px;
   border-radius: 24px;
-
-}
-@media screen and (min-width: 480px) {
-  .medicine-vpo {
-    width: 464px;
-  }
 }
 @media screen and (min-width: 768px) {
   .medicine-vpo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .medicine-vpo-img {
     width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .medicine-vpo {
-    width: 560px;
+  .medicine-vpo-img {
+    width: 540px;
   }
 }
 

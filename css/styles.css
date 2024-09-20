@@ -2405,6 +2405,15 @@ ol {
   }
 }
 
+.medicine-vpo-section {
+  display: block;
+}
+
+.medicine-vpo {
+  width: 500px;
+  margin-right: 16px;
+  border-radius: 16px;
+}
 
 
 /* ======== Сторінка дистанційного навчання, розклад занять ======== */

@@ -21,6 +21,8 @@
   --logo-color: #fdd333;
 
   --color-page-information: #F0E68C;
+
+  --color-download: #0000EE;
 }
 
 /* ================================================ */
@@ -862,6 +864,10 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-logo);
+}
+
+.main-h-title-h1 {
+  padding-bottom: 44px;
 }
 
 /* ===== Соц.мережі команди ===== */
@@ -2418,7 +2424,12 @@ ol {
   background-color: var(--color-page-information);
 }
 .color-information-link {
-  color: var(--parent-subtitle);
+  color: var(--color-download);
+}
+.color-information-link:hover, .color-information-link:focus {
+  color: var(--color-btn-form);
+  /* background-color: var(--second-color-font); */
+  cursor: pointer;
 }
 
 .section-information {
@@ -2452,7 +2463,8 @@ ol {
   padding-top: 0;
 }
 .list-item-information:last-child {
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
+  padding-bottom: 32px;
 }
 
 .link-big-title {
@@ -2614,6 +2626,14 @@ ol {
     text-align: center;
   }
 }
+.day-distance-text {
+  color: var(--color-download);
+}
+.day-distance-text:hover, .day-distance-text:focus {
+  color: var(--color-btn-form);
+  /* background-color: var(--second-color-font); */
+  cursor: pointer;
+}
 
 
 .lessons-image {
@@ -2622,3 +2642,29 @@ ol {
 }
 
 /* ============================================================== */
+
+/* Іконки для завантаження */
+.arrow-down {
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  /* background-color: var(--second-color-font); */
+  /* border-radius: 50%; */
+  color: var(--second-color-font);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.arrow-down:hover, .arrow-down:focus {
+  color: var(--color-download);
+  /* background-color: var(--second-color-font); */
+  cursor: pointer;
+}
+
+.arrow-down {
+  max-width: 24px;
+  max-height: 24px;
+  fill: currentColor;
+}

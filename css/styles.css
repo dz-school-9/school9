@@ -420,14 +420,14 @@ ol {
   letter-spacing: 0.02em;
  }
 .dropdown:hover .dropdown-child-info-open {
-  position:fixed;
+  /* position:fixed; */
   display: block;
   z-index: 10;
 }
 @media screen and (min-width: 480px) {
   .dropdown:hover .dropdown-child-info-open {
-    top: 290px;
-    margin-left: -16px;
+    /* top: 290px; */
+    /* margin-left: -16px; */
     width: 160px;
   }
 }
@@ -510,6 +510,384 @@ ol {
 .dropdown-list:hover {
   color: var(--second-color-font);
 }
+
+
+/* =============== Нове спадаюче меню ==================== */
+@media screen and (max-width: 479px) {
+  .main-menu {
+    display: none;
+  }
+}
+
+.main-menu, .main-menu-mobile {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* margin-top: 30px; */
+  padding-top: 16px;
+  /* font-family: 'Montserrat', sans-serif;    */
+  /* Для выравнивания меню по центру
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  */
+}
+.main-menu-mobile > li:first-child {
+  /* display: inline-flex; */
+  margin-left: 20px;
+}
+.main-menu-mobile > li + li {
+  margin-left: 20px;
+}
+.main-menu-mobile > li > a {
+  padding: 0 0 20px 0;
+  position: relative;
+  text-transform: uppercase;   
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  text-decoration: none;   
+}
+.main-menu > li {
+  display: inline-flex;
+}
+.main-menu > li + li {
+  margin-left: 20px;
+}
+.main-menu > li > a {
+  padding: 0 0 20px 0;
+  position: relative;
+  text-transform: uppercase;   
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+  text-decoration: none;   
+}
+@media screen and (min-width: 480px) {
+  .main-menu > li > a {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-menu > li > a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-menu > li > a {
+    font-size: 16px;
+    padding-right: 12px;
+  }
+}
+.main-menu-mobile > li > a:hover {
+  text-decoration: none;   
+  color: #337AB7;
+}
+.main-menu-mobile > li > a:after {
+  width: 0;
+  height: 3px;
+  background-color: #337AB7;
+  content: '';
+  left: 0;
+  bottom: 10px;
+  position: absolute;
+  transition: all .3s;
+}
+.main-menu-mobile > li > a:hover::after {
+  width: 100%;
+}
+.main-menu-mobile > li.active a:after {
+  width: 100%;
+}
+.main-menu-mobile li {
+  /* margin: 0; */
+  white-space: nowrap;
+  /* нове */
+  /* margin-left: 16px;
+  margin-right: 32px; */
+}
+.main-menu > li > a:hover {
+  text-decoration: none;   
+  color: #337AB7;
+}
+.main-menu > li > a:after {
+  width: 0;
+  height: 3px;
+  background-color: #337AB7;
+  content: '';
+  left: 0;
+  bottom: 10px;
+  position: absolute;
+  transition: all .3s;
+}
+.main-menu > li > a:hover::after {
+  width: 100%;
+}
+.main-menu > li.active a:after {
+  width: 100%;
+}
+.main-menu li {
+  /* margin: 0; */
+  white-space: nowrap;
+  /* нове */
+  /* margin-left: 16px;
+  margin-right: 32px; */
+}
+@media screen and (min-width: 480px) {
+  .main-menu li:first-child {
+    padding-left: 20px;
+  }
+  .main-menu li {
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-menu li:first-child {
+    padding-left: 20px;
+  }
+  .main-menu li {
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-menu li {
+    padding-left: 20px;
+  }
+  .main-menu li:first-child {
+    padding-left: 40px;
+  }
+}
+.main-menu li.menu-children {
+  position: relative;
+  margin-right: 12px;
+}
+.main-menu li.menu-children:after {
+  position: absolute;
+  content: "\2039";
+  color: #337AB7;
+  font-size: 20px;
+  font-weight: bold;
+  right: -12px;
+  top: -2px;
+  transform: rotate(-90deg);
+}
+.main-menu li li.menu-children:after {
+  position: absolute;
+  content: "\2039";
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  right: 10px;
+  top: 12px;
+  transform: rotate(180deg);
+}
+.main-menu li.menu-children:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.main-menu ul {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #337AB7;
+  position: absolute;
+  z-index: 20;
+  min-width: 220px;
+  top: 100%;
+  left: -30px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
+}
+.main-menu ul li {
+  display: block;
+  padding: 0 10px;
+  line-height: 1.1;
+}
+.main-menu ul li:last-child {
+  margin-bottom: 0;
+}
+.main-menu ul li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  transition: all .3s;
+  text-decoration: none;   
+}
+.main-menu ul li a:hover {
+  color: #337AB7;
+  background: #FFF;
+  text-decoration: none;   
+}
+.main-menu ul ul {
+  top: 0;
+  left: 100%;
+}
+/* =========== Кінець нового спадаючого меню ============= */
+
+/* =============== Нове мобільне спадаюче меню ==================== */
+.vertical-menu {
+  /* width: 200px; */
+  width: auto;
+}
+
+.vertical-menu a {
+  /* background-color: #eee; */
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.main-menu-mobile li.menu-children {
+  position: relative;
+  margin-right: 12px;
+}
+.main-menu-mobile li.menu-children:after {
+  position: absolute;
+  content: "\2039";
+  color: #337AB7;
+  font-size: 20px;
+  font-weight: bold;
+  right: -12px;
+  top: -2px;
+  transform: rotate(-90deg);
+}
+.main-menu-mobile li li.menu-children:after {
+  position: absolute;
+  content: "\2039";
+  color: #FFF;
+  font-size: 20px;
+  font-weight: bold;
+  right: 10px;
+  top: 12px;
+  transform: rotate(180deg);
+}
+.main-menu-mobile li.menu-children:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.main-menu-mobile ul {
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #337AB7;
+  position: absolute;
+  z-index: 20;
+  min-width: 220px;
+  top: 100%;
+  /* left: -30px; */
+  left: 24px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
+}
+.main-menu-mobile ul li {
+  display: block;
+  padding: 0 10px;
+  line-height: 1.1;
+}
+.main-menu-mobile ul li:last-child {
+  margin-bottom: 0;
+}
+.main-menu-mobile ul li a {
+  display: block;
+  color: #fff;
+  padding: 10px;
+  transition: all .3s;
+  text-decoration: none;   
+}
+.main-menu-mobile ul li a:hover {
+  color: #337AB7;
+  background: #FFF;
+  text-decoration: none;   
+}
+.main-menu-mobile ul ul {
+  top: 0;
+  left: 100%;
+}
+
+/* .main-menu-mobile > .main-submenu-mobile > a:hover {
+  display: block;
+  text-decoration: none;   
+  color: #337AB7;
+} */
+
+/* .vertical-menu a.active2 {
+  background-color: #4CAF50;
+  color: white;
+} */
+
+/* Fixed sidenav, full height */
+/* .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+} */
+
+/* Style the sidenav links and the dropdown button */
+/* .sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+} */
+
+/* On mouse-over */
+/* .sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+} */
+
+/* Main content */
+/* .main {
+  margin-left: 200px; Same as the width of the sidenav
+  font-size: 20px; Increased text to enable scrolling
+  padding: 0px 10px;
+} */
+
+/* Add an active class to the active dropdown button */
+/* .active {
+  background-color: green;
+  color: white;
+} */
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+/* .dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+} */
+
+/* Optional: Style the caret down icon */
+/* .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+} */
+/* =========== Кінець нового мобільного спадаючого меню ============= */
   
 
 /* ==== МОБІЛЬНЕ СПАДАЮЧЕ МЕНЮ ==== */
@@ -525,11 +903,11 @@ ol {
   text-align: left;
   background-color: var(--border-portfolio);
 
-  border-left: 2px solid var(--hero-color-font);
-  border-top: 2px solid var(--hero-color-font);
-  border-right: 2px solid var(--paragraph-color-font);
-  border-bottom: 2px solid var(--paragraph-color-font);
-  border-radius: 12px;
+  border-left: 2px solid var(--color-btn-form);
+  border-top: 2px solid var(--color-btn-form);
+  border-right: 2px solid var(--color-btn-form);
+  border-bottom: 2px solid var(--color-btn-form);
+  /* border-radius: 12px; */
 }
 .dropdown-menu:hover .dropdown-navigation-list {
   display: block;
@@ -2668,3 +3046,5 @@ ol {
   max-height: 24px;
   fill: currentColor;
 }
+
+

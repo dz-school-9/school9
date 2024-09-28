@@ -556,7 +556,7 @@ ol {
   margin-left: 20px;
 }
 .main-menu > li > a {
-  padding: 0 0 20px 0;
+  padding: 0 0 16px 0;
   position: relative;
   text-transform: uppercase;   
   color: #000;
@@ -695,13 +695,25 @@ ol {
   background-color: #337AB7;
   position: absolute;
   z-index: 20;
-  min-width: 220px;
-  top: 100%;
-  left: -30px;
+  /* min-width: 220px; */
+  min-width: 160px;
+  /* top: 100%; */
+  left: -8px;
+  top: 68%;
   opacity: 0;
   visibility: hidden;
   transform: translateY(5px);
   transition: all 200ms cubic-bezier(0.43, 0.59, 0.16, 1.25);
+}
+@media screen and (min-width: 480px) {
+  .main-menu li ul li:first-child {
+    margin-left: -10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-menu li ul li:first-child {
+    margin-left: -30px;
+  }
 }
 .main-menu ul li {
   display: block;
@@ -792,9 +804,10 @@ ol {
   position: absolute;
   z-index: 20;
   min-width: 220px;
-  top: 100%;
+  /* top: 100%; */
+  top: 72%;
   /* left: -30px; */
-  left: 24px;
+  left: 64px;
   opacity: 0;
   visibility: hidden;
   transform: translateY(5px);

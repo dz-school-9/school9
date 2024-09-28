@@ -747,6 +747,13 @@ ol {
   background-color: #ccc;
 }
 
+.main-menu-mobile li {
+  padding-bottom: 4px;
+}
+.main-menu-mobile li:last-child {
+  padding-bottom: 0;
+}
+
 .main-menu-mobile li.menu-children {
   position: relative;
   margin-right: 12px;

@@ -2755,18 +2755,18 @@ ol {
 
 .parent-paragraph {
   /* font-weight: 500; */
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 480px) {
   .parent-paragraph {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .parent-paragraph {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {

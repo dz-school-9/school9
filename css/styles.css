@@ -2851,16 +2851,16 @@ ol {
   padding-bottom: 24px;
 }
 
-.list-item-information {
+.list-item-information, .link-main-page {
   padding-top: 12px;
   font-size: 24px;
   line-height: 1.5;
   padding-bottom: 16px;
 }
-.list-item-information:first-child {
+.list-item-information:first-child, .link-main-page:first-child {
   padding-top: 0;
 }
-.list-item-information:last-child {
+.list-item-information:last-child, .link-main-page:last-child {
   /* padding-bottom: 0; */
   padding-bottom: 32px;
 }

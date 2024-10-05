@@ -3068,3 +3068,18 @@ ol {
 }
 
 
+/* ======== ГОДИННИК ======== */
+.clock {
+  padding-top: 0;
+  padding-bottom: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .clock {
+    padding-top: 60px;
+  }
+}
+#timedate {
+  background-color: #188CE8;
+}
+/* =========================== */

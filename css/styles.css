@@ -3039,6 +3039,43 @@ ol {
   border-radius: 12px;
 }
 
+
+.timetable-1-11 {
+  text-align: center;
+}
+.timetable-5-11-title, .timetable-1-4-title {
+  line-height: 1.65;
+}
+.timetable-1-4-title {
+  padding-top: 44px;
+}
+.timetable-5-11-img {
+  width: 100%;
+  height: auto;
+  padding: 4px 4px 4px 4px;
+}
+.timetable-1-4-img {
+  width:50%;
+  height: auto;
+  padding: 4px 4px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .timetable-1-4-img {
+    width: auto;
+    height: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .timetable-5-11-img {
+    width: auto;
+    height: 700px;
+  }
+  .timetable-1-4-img {
+    height: 700px;
+  }
+}
+
+
 /* ============================================================== */
 
 /* Іконки для завантаження */

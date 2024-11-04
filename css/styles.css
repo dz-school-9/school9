@@ -100,6 +100,10 @@
   }
 }
 
+.section-month {
+  padding: 44px;
+}
+
 .body {
   color: var(--primary-color-font);
   font-family: var(--primary-font);
@@ -169,13 +173,13 @@ ol {
     flex-wrap: wrap;
     
     width: 240px;
-    height: 232px;
+    height: 240px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-logo-main {
     width: 256px;
-    height: 176px;
+    height: 200px;
   }
 }
 
@@ -284,7 +288,7 @@ ol {
 @media screen and (min-width: 480px) {
   .header-menu {
     width: 480px;
-    height: 176px;
+    height: 180px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -295,7 +299,7 @@ ol {
 @media screen and (min-width: 1200px) {
   .header-menu {
     width: 944px;
-    height: 120px;
+    height: 144px;
   }
 }
 
@@ -2203,6 +2207,13 @@ ol {
 }
 .comand-bg-color:last-child {
   background-color: var(--border-portfolio);
+}
+
+.month-bg-color {
+  background-color: var(--comand-color);
+}
+.month-bg-color:nth-child(2n+1) {
+  background-color: var(--hero-color-font);
 }
 
 .team-location {

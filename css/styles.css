@@ -2764,26 +2764,36 @@ ol {
   padding-bottom: 20px;
 }
 
-.parent-paragraph {
+.parent-paragraph,
+.month-paragraph-list {
   /* font-weight: 500; */
   font-size: 20px;
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 480px) {
-  .parent-paragraph {
+  .parent-paragraph,
+  .month-paragraph-list {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
-  .parent-paragraph {
+  .parent-paragraph,
+  .month-paragraph-list {
     font-size: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .parent-paragraph {
+  .parent-paragraph,
+  .month-paragraph-list {
     font-size: 24px;
   }
+}
+.month-paragraph-list {
+  padding-bottom: 16px;
+}
+.month-paragraph-list:last-child {
+  padding-bottom: 0;
 }
 
 
@@ -3143,6 +3153,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-logo);
+  margin-bottom: 24px;
 }
 
 .month-video {
@@ -3176,26 +3187,6 @@ ol {
   font-weight: 700;
 }
 
-/* .vaccine {
-  display: block;
-  text-align: left;
-  margin-top: 24px;
-}
-.vaccine-image {
-  width: 100%;
-  margin-right: 16px;
-  border-radius: 16px;
-}
-@media screen and (min-width: 1200px) {
-  .vaccine {
-    display: flex;
-    align-items: center;
-  }
-  .vaccine-image {
-    width: 44%;
-  }
-} */
-
 .month-images p {
   padding: 24px 0;
 }
@@ -3211,3 +3202,35 @@ ol {
     justify-content: space-around;
   }
 }
+
+.month-image-one {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .month-image-one {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .month-image-one {
+    width: 768px;
+    height: 480px;
+  }
+}
+
+.month-link {
+  color: var(--color-btn-form);
+}
+.month-link:hover {
+  color: var(--color-download);
+}
+
+.paragraph-one-image {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .paragraph-one-image {
+    display: flex;
+  }
+}
+

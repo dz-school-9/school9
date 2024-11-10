@@ -1,3 +1,4 @@
+// ======== ГОДИННИК ========
 Number.prototype.pad = function(n) {
     for (var r = this.toString(); r.length < n; r = 0 + r);
     return r;
@@ -22,3 +23,8 @@ function initClock() {
     updateClock();
     window.setInterval("updateClock()", 1);
 }
+
+
+// ======== Для ЗОБРАЖЕНЬ ========
+const imageLoad = document.querySelector("img");
+imageLoad.setAttribute(loading, lazy);

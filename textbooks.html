@@ -10,7 +10,7 @@
     <link rel="icon" href="./images/favicon.png">
 </head>
 
-<body class="body">
+<body class="body" onLoad="initClock()">
     <header class="header-bg-color">
 
         <div class="container header-main">
@@ -348,86 +348,19 @@
                     </ul>
                 </div> 
                 
-                <div class="clock">
-                    <style type="text/css">
-                        /* .body {background-color: 3C50B4;} */
-                        
-                        #timedate {
-                          font: small-caps lighter 32px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-                          font-weight: 700;
-                          text-align:center;
-                          width: auto;
-                          margin: 5px auto;
-                          color: #ffff00;
-                          border-left: 3px solid yellow;
-                          border-right: 3px solid yellow;
-                          padding: 5px;
-                          border-radius: 20px;
-                        }
-                        
-                        @media screen and (max-width: 500px){
-                        #timedate {
-                          font: small-caps lighter 24px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-                          font-weight: 700;
-                          text-align:center;
-                          width: auto;
-                          margin: 5px auto;
-                          color: #ffff00;
-                          border-left: 3px solid yellow;
-                          border-right: 3px solid yellow;
-                          padding: 5px;
-                          border-radius: 20px;
-                        }
-                        }
-                        
-                        </style>
-                        
-                        <body onLoad="initClock()">
-                        
-                          <div id="timedate" class="body">
-                            <a id="mon">Січень</a>
-                            <a id="d">1</a>,
-                            <a id="y">0</a><br />
-                            <a id="h">12</a> :
-                            <a id="m">00</a> :
-                            <a id="s">00</a>
-                          </div>
-                        <!-- partial -->
-                          
-                        
-                        <script>
-                        
-                        Number.prototype.pad = function(n) {
-                          for (var r = this.toString(); r.length < n; r = 0 + r);
-                          return r;
-                        };
-                        
-                        function updateClock() {
-                          var now = new Date();
-                          var sec = now.getSeconds(),
-                            min = now.getMinutes(),
-                            hou = now.getHours(),
-                            mo = now.getMonth(),
-                            dy = now.getDate(),
-                            yr = now.getFullYear();
-                          var months = ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"];
-                          var tags = ["mon", "d", "y", "h", "m", "s"],
-                            corr = [months[mo], dy, yr, hou.pad(2), min.pad(2), sec.pad(2)];
-                          for (var i = 0; i < tags.length; i++)
-                            document.getElementById(tags[i]).firstChild.nodeValue = corr[i];
-                        }
-                        
-                        function initClock() {
-                          updateClock();
-                          window.setInterval("updateClock()", 1);
-                        }
-                        </script>
-                        
-                        </body>
+                <div loading="lazy" class="clock">
+                    <div loading="lazy" id="timedate">
+                        <a id="mon">Січень</a>
+                        <a id="d">1</a>,
+                        <a id="y">0</a><br />
+                        <a id="h">12</a> :
+                        <a id="m">00</a> :
+                        <a id="s">00</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script defer src="./js/time-date.js"></script>
 </body>
 </html>

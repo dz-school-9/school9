@@ -2,13 +2,13 @@
 :root {
   --primary-color-font: #212121;
   --second-color-font: #2196F3;
-  --color-logo: #000000;
+  --color-logo: #000;
   --paragraph-color-font: #757575;
-  --hero-color-font: #FFFFFF;
+  --hero-color-font: #FFF;
   --footer-color-font: rgba(255, 255, 255, 0.6);
   --hero-footer-color: #2F303A;
   --comand-color: #F5F4FA;
-  --border-portfolio: #EEEEEE;
+  --border-portfolio: #EEE;
   --border-client: #AFB1B8;
   --color-social-footer: rgba(255, 255, 255, 0.1);
   --color-btn-form: #188CE8;
@@ -22,7 +22,8 @@
 
   --color-page-information: #F0E68C;
 
-  --color-download: #0000EE;
+  --color-download: #00E;
+  --color-clock: #ff0;
 }
 
 /* ================================================ */
@@ -3234,3 +3235,18 @@ ol {
   }
 }
 
+
+/* ======== ГОДИННИК, початок стилів ======== */
+#timedate {
+  font: small-caps lighter 32px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  text-align:center;
+  width: auto;
+  margin: 4px auto;
+  color: var(--color-clock);
+  border-left: 4px solid var(--color-clock);
+  border-right: 4px solid var(--color-clock);
+  padding: 4px;
+  border-radius: 20px;
+}
+/* ======== ГОДИННИК, кінець стилів ======== */

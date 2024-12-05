@@ -1259,7 +1259,7 @@ ol {
   margin-bottom: 50px;
 }
 
-.main-h-title {
+.main-level-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -1269,7 +1269,7 @@ ol {
   color: var(--text-logo);
 }
 
-.main-h-title-h1 {
+.main-level-title-h1 {
   padding-bottom: 44px;
 }
 
@@ -3250,3 +3250,22 @@ ol {
   border-radius: 20px;
 }
 /* ======== ГОДИННИК, кінець стилів ======== */
+
+/* Кнопка з градієнтною заливкою */
+.gradient-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #4CAF50, #2196F3);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.gradient-button:hover {
+  background: linear-gradient(135deg, #45a049, #1976D2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Кінець стилів кнопки */
+

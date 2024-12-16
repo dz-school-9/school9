@@ -2222,6 +2222,12 @@ ol {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  transform: scale(1.0);
+  transition: all .2s ease-in-out;
+}
+.team-location li:hover {
+  transform: scale(1.05);
+  transition: transform .2s ease-in-out;
 }
 
 .person-location {

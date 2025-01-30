@@ -289,7 +289,7 @@ ol {
 @media screen and (min-width: 480px) {
   .header-menu {
     width: 480px;
-    height: 180px;
+    height: 190px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -558,7 +558,7 @@ ol {
   display: inline-flex;
 }
 .main-menu > li + li {
-  margin-left: 20px;
+  margin-left: 12px;
 }
 .main-menu > li > a {
   padding: 0 0 16px 0;
@@ -573,11 +573,13 @@ ol {
 @media screen and (min-width: 480px) {
   .main-menu > li > a {
     font-size: 13px;
+    padding-right: 16px;
   }
 }
 @media screen and (min-width: 768px) {
   .main-menu > li > a {
     font-size: 14px;
+    padding-right: 20px;
   }
 }
 @media screen and (min-width: 1200px) {

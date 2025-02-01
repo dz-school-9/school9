@@ -573,19 +573,19 @@ ol {
 @media screen and (min-width: 480px) {
   .main-menu > li > a {
     font-size: 13px;
-    padding-right: 16px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 768px) {
   .main-menu > li > a {
     font-size: 14px;
-    padding-right: 20px;
+    padding-right: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
   .main-menu > li > a {
     font-size: 16px;
-    padding-right: 12px;
+    padding-right: 8px;
   }
 }
 .main-menu-mobile > li > a:hover {

@@ -2769,8 +2769,15 @@ ol {
 }
 
 .parent-img {
+  align-content: left;
   padding-right: 20px;
   padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.parent-img-text {
+  display: block;
 }
 
 .parent-paragraph,
@@ -2791,11 +2798,22 @@ ol {
   .month-paragraph-list {
     font-size: 24px;
   }
+  .parent-img-text {
+    display: flex;
+  }
+  .parent-img {
+    width: 320px;
+    height: 100%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .parent-paragraph,
   .month-paragraph-list {
     font-size: 24px;
+  }
+  .parent-img {
+    width: 240px;
+    height: 100%;
   }
 }
 .month-paragraph-list {
@@ -2818,7 +2836,7 @@ ol {
 .psychology-video-element iframe {
   width: 100%;
   height: auto;
-  padding: 10px 10px 10px 10px;
+  margin: 16px;
   border-radius: 24px;
 }
 @media screen and (min-width: 480px) {
@@ -3108,6 +3126,17 @@ ol {
 
 
 /* ============================================================== */
+
+
+
+/* ======== Сторінка дистанційного навчання, розклад занять ======== */
+.image-on-page {
+  width: 100%;
+}
+/* ============================================================== */
+
+
+
 
 /* Іконки для завантаження */
 .arrow-down {

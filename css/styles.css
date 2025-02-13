@@ -2804,10 +2804,16 @@ ol {
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
+.paragraph-documents {
+  margin-top: 16px;
+}
 @media screen and (min-width: 480px) {
   .parent-paragraph,
   .month-paragraph-list {
     font-size: 20px;
+  }
+  .paragraph-documents {
+    margin-top: 24px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2831,6 +2837,9 @@ ol {
   .parent-img {
     width: 240px;
     height: 100%;
+  }
+  .paragraph-documents {
+    margin-top: 32px;
   }
 }
 .month-paragraph-list {
@@ -3101,7 +3110,9 @@ ol {
 
 
 .lessons-image {
+  width: 242px;
   height: 150px;
+  text-align: center;
   border-radius: 12px;
 }
 

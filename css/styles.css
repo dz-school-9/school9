@@ -1263,7 +1263,7 @@ ol {
 
 .main-level-title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
@@ -1272,7 +1272,24 @@ ol {
 }
 
 .main-level-title-h1 {
-  padding-bottom: 44px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .main-level-title {
+    font-size: 24px;
+  }
+  .main-level-title-h1 {
+    padding-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-level-title {
+    font-size: 36px;
+  }
+  .main-level-title-h1 {
+    padding-bottom: 44px;
+  }
 }
 
 /* ===== Соц.мережі команди ===== */
@@ -2783,7 +2800,7 @@ ol {
 .parent-paragraph,
 .month-paragraph-list {
   /* font-weight: 500; */
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
 }

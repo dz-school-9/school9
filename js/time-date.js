@@ -26,5 +26,5 @@ function initClock() {
 
 
 // ======== Для ЗОБРАЖЕНЬ ========
-const imageLoad = document.querySelector("img");
-imageLoad.setAttribute(loading, lazy);
+// const imageLoad = document.querySelector("img");
+// imageLoad.setAttribute(loading, lazy);

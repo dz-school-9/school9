@@ -3098,6 +3098,9 @@ ol {
   .day-distance {
     text-align: center;
   }
+  .day-holyday {
+    width: 200px;
+  }
 }
 .day-distance-text {
   color: var(--color-download);

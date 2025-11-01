@@ -97,7 +97,7 @@ const headerHTML = `
             <div class="header-menu">
                 <nav>
                     <ul class="main-menu">
-                        <li class="active"><a href="./index.html">Головна</a></li>
+                        <li class=""><a href="./index.html">Головна</a></li>
                         <li><a href="./about-school.html">Про заклад</a></li>
                         <li class="menu-children">
                             <a href="./informationopenness.html">Прозорість та<br>інформаційна відкритість</a>
@@ -133,6 +133,7 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="#">Новини<br>закладу</a>
                             <ul>
+                                <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                 <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                 <li><a href="./2025-09-september.html">Вересень-2025</a></li>
                                 <li><a href="./2025-08-august.html">Серпень-2025</a></li>
@@ -191,7 +192,7 @@ const headerHTML = `
                     <nav class="dropdown-navigation-list">
                         <div class="vertical-menu">
                             <ul class="list main-menu-mobile">
-                                <li class="active"><a href="./index.html">Головна</a></li>
+                                <li class=""><a href="./index.html">Головна</a></li>
                                 <li><a href="./about-school.html">Про заклад</a></li> 
                                 <li class="menu-children">
                                     <a href="./informationopenness.html" class="main-submenu-mobile2">Прозорість та<br>інформаційна відкритість</a>
@@ -227,6 +228,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#">Новини закладу</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+                                        <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                         <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                         <li><a href="./2025-09-september.html">Вересень-2025</a></li>
                                         <li><a href="./2025-08-august.html">Серпень-2025</a></li>

@@ -44,8 +44,8 @@ function initClock() {
 
 // Шаблонная строка (Template Literal) для хранения всего HTML-кода футера
 const footerHTML = `
-    <footer class="footer-color">
-        <div class="container container-footer footer-address-social">
+    <div class="container container-footer">
+        <div class="footer-address-social">
             <div class="footer-address">
                 <address>
                     <ul class="list">
@@ -74,7 +74,7 @@ const footerHTML = `
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 `;
 
 // Находим контейнер

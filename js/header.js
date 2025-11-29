@@ -50,6 +50,7 @@ function setActiveMenuItem() {
 // =========================================================
 
 const headerHTML = `
+	<div class="visually-hidden"><h1>Заклад загальної середньої освіти І-ІІІ ступенів № 9</h1></div>
     <div class="container header-main">
         <div class="header-logo-main">
             <img loading="lazy" src="./images/logo-opacity.png" width="118" height="98" alt="school's logo">
@@ -133,6 +134,7 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="#">Новини<br>закладу</a>
                             <ul>
+								<li><a href="./2025-12-december.html">Грудень-2025</a></li>
                                 <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                 <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                 <li><a href="./2025-09-september.html">Вересень-2025</a></li>
@@ -228,6 +230,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#">Новини закладу</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+										<li><a href="./2025-12-december.html">Грудень-2025</a></li>
                                         <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                         <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                         <li><a href="./2025-09-september.html">Вересень-2025</a></li>

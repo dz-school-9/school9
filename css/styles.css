@@ -3304,6 +3304,82 @@ ol {
   }
 }
 
+/* ======== АДВЕНТ-КАЛЕНДАР, початок стилів ======== */
+.advent-calendar {
+  width: 100%;
+  border: solid var(--color-btn-form) 4px;
+  border-radius: 24px;
+  /* width: 200px;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;  
+  cursor: pointer;
+}
+.advent-calendar:hover, .advent-calendar:focus {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
+}
+/* ======== АДВЕНТ-КАЛЕНДАР, кінець стилів ======== */
+/* ======== АДВЕНТ-КАЛЕНДАР, СНІГ, початок стилів ======== */
+/* 1 спосіб */
+/* .snow-container { */
+    /* position: relative; */
+    /* overflow: hidden;  */
+        /* Важно: снег не выйдет за границы */
+    /* min-height: 400px;  */
+        /* Для примера */
+    /* background: #1e272e;  */
+        /* Темный фон, чтобы снег был виден */
+    /* color: white; */
+/* } */
+/* Стили для снежинок */
+/* .snowflake { */
+    /* position: absolute; */
+    /* top: -10px; */
+    /* background: white; */
+    /* border-radius: 50%; */
+    /* pointer-events: none;  */
+        /* Чтобы снег не мешал нажимать на кнопки */
+    /* opacity: 0.8; */
+/* } */
+/* @keyframes fall { */
+    /* to { */
+        /* transform: translateY(100vh);  */
+          /* Падение вниз */
+    /* } */
+/* } */
+/* 2 спосіб */
+.snow-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+    /*background: #1e272e;*/ /* Фон для примера */
+}
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    /* Убираем жесткую привязку, будем задавать анимации через JS */
+}
+/* Анимация падения вниз */
+@keyframes fall {
+    0% { top: -5%; }
+    100% { top: 105%; }
+}
+/* Анимация покачивания в стороны */
+@keyframes sway {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(40px); } /* Снежинку заносит в сторону на 40px */
+}
+/* ======== АДВЕНТ-КАЛЕНДАР, СНІГ, кінець стилів ======== */
+
 
 /* ======== ГОДИННИК, початок стилів ======== */
 #timedate {

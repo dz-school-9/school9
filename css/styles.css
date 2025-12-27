@@ -3369,7 +3369,7 @@ ol {
     position: relative;
     overflow: hidden;
     min-height: 400px;
-    /*background: #1e272e;*/ /* Фон для примера */
+    background: var(--border-client); /* Фон для примера */
 }
 .snowflake {
     position: absolute;

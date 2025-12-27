@@ -3155,6 +3155,18 @@ ol {
   }
 }
 
+.holydays-title {
+  padding-bottom: 32px;
+  color: var(--logo-color);
+}
+.holydays-dates {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 24px;
+  color: var(--parent-subtitle);
+}
 
 /* ============================================================== */
 
@@ -3379,6 +3391,12 @@ ol {
     50% { transform: translateX(40px); } /* Снежинку заносит в сторону на 40px */
 }
 /* ======== АДВЕНТ-КАЛЕНДАР, СНІГ, кінець стилів ======== */
+
+/* ======== КАНІКУЛИ, СНІГ, початок стилів ======== */
+.winter-holyday {
+	background-color: var(--border-client);
+}
+/* ======== КАНІКУЛИ, СНІГ, кінець стилів ======== */
 
 
 /* ======== ГОДИННИК, початок стилів ======== */

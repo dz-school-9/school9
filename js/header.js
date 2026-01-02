@@ -49,8 +49,7 @@ function setActiveMenuItem() {
 // === 2. HTML ШАБЛОН HEADER ===
 // =========================================================
 
-const headerHTML = `
-	<div class="visually-hidden"><h1>Заклад загальної середньої освіти І-ІІІ ступенів № 9</h1></div>
+const headerHTML = `	
     <div class="container header-main">
         <div class="header-logo-main">
             <img loading="lazy" src="./images/logo-opacity.png" width="118" height="98" alt="school's logo">

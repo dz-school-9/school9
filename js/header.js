@@ -179,7 +179,7 @@ const headerHTML = `
                             </ul>
                         </li>
                         <li class="menu-children">
-                            <a href="./graduate-2024-2025.html">Випускнику -<br>2024-2025</a>
+                            <a href="./graduate-2024-2025.html">Випускнику -<br>2025-2026</a>
                             <ul>
                                 <li><a href="./nmt-ready.html">Готуємось до НМТ</a></li>
                                 <li><a href="./nmt-all-about.html">Все про НМТ</a></li>
@@ -266,7 +266,7 @@ const headerHTML = `
                                     </ul>
                                 </li>
                                 <li class="menu-children">
-                                    <a href="./graduate-2024-2025.html">Випускнику - 2024-2025</a>
+                                    <a href="./graduate-2024-2025.html">Випускнику - 2025-2026</a>
                                     <ul>
                                         <li><a href="./nmt-ready.html">Готуємось до НМТ</a></li>
                                         <li><a href="./nmt-all-about.html">Все про НМТ</a></li>
@@ -296,4 +296,5 @@ if (appHeader) {
     
     // Запускаємо функцію активації меню
     setActiveMenuItem(); 
+
 }

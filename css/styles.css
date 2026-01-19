@@ -21,6 +21,7 @@
   --logo-color: #fdd333;
 
   --color-page-information: #F0E68C;
+  --color-page-information2nd: #e3d87a;
 
   --color-download: #00E;
   --color-clock: #ff0;
@@ -2895,6 +2896,9 @@ ol {
 .color-page-information {
   background-color: var(--color-page-information);
 }
+.color-page-information:nth-child(2n+1) {
+  background-color: var(--color-page-information2nd);
+}
 .color-information-link {
   color: var(--color-download);
 }
@@ -3432,3 +3436,17 @@ ol {
 }
 /* Кінець стилів кнопки */
 
+
+/* ======== До ФІНАНСОВОЇ ДІЯЛЬНОСТІ, початок стилів ======== */
+/* Скрывает стрелку в современных браузерах */
+summary {
+    font-size: 24px;
+    font-weight: 700;
+    /* Скрывает стрелку в современных браузерах */
+    /* list-style: none;  */
+}
+/* summary::-webkit-details-marker { */
+    /* Скрывает стрелку в Safari/Chrome */
+    /* display: none;     */
+/* } */
+/* ======== До ФІНАНСОВОЇ ДІЯЛЬНОСТІ, кінець стилів ======== */

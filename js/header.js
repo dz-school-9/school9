@@ -99,14 +99,7 @@ const headerHTML = `
                     <ul class="main-menu">
                         <li class=""><a href="./index.html">Головна</a></li>
                         <li><a href="./about-school.html">Про заклад</a></li>
-                        <li class="menu-children">
-                            <a href="./informationopenness.html">Прозорість та<br>інформаційна відкритість</a>
-                            <ul>
-                                <li><a href="./attestation.html">Атестація</a></li>
-                                <li><a href="./qualification.html">Підвищення кваліфікації педпрацівників</a></li>
-                                <li><a href="./textbooks.html">Вибір підручників</a></li>
-                            </ul>
-                        </li>
+                        <li class=""><a href="./informationopenness.html">Прозорість та<br>інформаційна відкритість</a></li>
                         <li class=""><a href="./orders.html">Накази</a></li>
                         <li class="menu-children">
                             <a href="./students.html">Учням</a>
@@ -197,14 +190,7 @@ const headerHTML = `
                             <ul class="list main-menu-mobile">
                                 <li class=""><a href="./index.html">Головна</a></li>
                                 <li><a href="./about-school.html">Про заклад</a></li> 
-                                <li class="menu-children">
-                                    <a href="./informationopenness.html" class="main-submenu-mobile2">Прозорість та<br>інформаційна відкритість</a>
-                                    <ul class="list main-menu-mobile main-submenu-mobile">
-                                        <li><a href="./attestation.html">Атестація</a></li>
-                                        <li><a href="./qualification.html">Підвищення кваліфікації<br>педпрацівників</a></li>
-                                        <li><a href="./textbooks.html">Вибір підручників</a></li>
-                                    </ul>
-                                </li>
+                                <li class=""><a href="./informationopenness.html" class="main-submenu-mobile2">Прозорість та<br>інформаційна відкритість</a></li>
                                 <li class=""><a href="./orders.html">Накази</a></li>
                                 <li class="menu-children">
                                     <a href="./students.html">Учням</a>

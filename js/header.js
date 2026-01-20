@@ -119,6 +119,7 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="#">Батькам</a>
                             <ul>
+                                <li><a href="./parentsresource.html">Ресурси для батьків</a></li>
                                 <li><a href="./parentsteachers.html">Поради педагогів батькам</a></li>
                                 <li><a href="./parentsfirstclass.html">Поради для батьків<br>першокласників</a></li>
                             </ul>
@@ -216,6 +217,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#" class="main-submenu-mobile">Батькам</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+                                        <li><a href="./parentsresource.html">Ресурси для батьків</a></li>
                                         <li><a href="./parentsteachers.html">Поради педагогів батькам</a></li>
                                         <li><a href="./parentsfirstclass.html">Поради для батьків<br>першокласників</a></li>
                                     </ul>

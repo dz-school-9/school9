@@ -111,7 +111,7 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="./students.html">Учням</a>
                             <ul>
-                                <li><a href="./mine-safety.html">Мінна безпека</a></li>
+                                <li><a href="./mine-safety.html">Безпечне середовище</a></li>
                                 <li><a href="./student-rules.html">Правила здобувачів освіти</a></li>
                                 <li><a href="./smoking-prevention.html">Профілактика тютюнопаління</a></li>
                             </ul>
@@ -208,7 +208,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="./students.html">Учням</a>
                                     <ul>
-                                        <li><a href="./mine-safety.html">Мінна безпека</a></li>
+                                        <li><a href="./mine-safety.html">Безпечне середовище</a></li>
                                         <li><a href="./student-rules.html">Правила здобувачів освіти</a></li>
                                         <li><a href="./smoking-prevention.html">Профілактика тютюнопаління</a></li>
                                     </ul>
@@ -298,3 +298,4 @@ if (appHeader) {
     setActiveMenuItem(); 
 
 }
+

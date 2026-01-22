@@ -170,6 +170,7 @@ const headerHTML = `
                                 <li><a href="./ty-yak.html">«Ти як?»</a></li>
                                 <li><a href="./mental-health.html">Студія ментального здоров'я</a></li>
                                 <li><a href="./trust-box.html">Скринька довіри</a></li>
+                                <li><a href="./regulatory-documents.html">Нормативно-правові документи</a></li>
                             </ul>
                         </li>
                         <li class="menu-children">
@@ -251,6 +252,7 @@ const headerHTML = `
                                         <li><a href="./ty-yak.html">«Ти як?»</a></li>
                                         <li><a href="./mental-health.html">Студія ментального здоров'я</a></li>
                                         <li><a href="./trust-box.html">Скринька довіри</a></li>
+                                        <li><a href="./regulatory-documents.html">Нормативно-правові документи</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-children">

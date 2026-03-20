@@ -3403,6 +3403,13 @@ ol {
 /* ======== КАНІКУЛИ, СНІГ, кінець стилів ======== */
 
 
+/* ======== КАНІКУЛИ, ВЕСНА, ПЕЛЮСТКИ, початок стилів ======== */
+.comand-bg-color-spring {
+  background-color: #e1fde2;
+}
+/* ======== КАНІКУЛИ, ВЕСНА, ПЕЛЮСТКИ, кінець стилів ======== */
+
+
 /* ======== ГОДИННИК, початок стилів ======== */
 #timedate {
   font: small-caps lighter 32px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;

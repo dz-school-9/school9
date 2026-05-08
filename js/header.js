@@ -128,6 +128,7 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="#">Новини<br>закладу</a>
                             <ul>
+                                <li><a href="./2026-05-may.html">Травень-2026</a></li>
                                 <li><a href="./2026-04-april.html">Квітень-2026</a></li>
                                 <li><a href="./2026-03-march.html">Березень-2026</a></li>
                                 <li><a href="./2026-02-february.html">Лютий-2026</a></li>
@@ -224,6 +225,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#">Новини закладу</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+                                        <li><a href="./2026-05-may.html">Травень-2026</a></li>
                                         <li><a href="./2026-04-april.html">Квітень-2026</a></li>
                                         <li><a href="./2026-03-march.html">Березень-2026</a></li>
                                         <li><a href="./2026-02-february.html">Лютий-2026</a></li>

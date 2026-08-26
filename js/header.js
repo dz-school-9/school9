@@ -108,6 +108,7 @@ const headerHTML = `
                                 <li><a href="./student-rules.html">Правила здобувачів освіти</a></li>
                                 <li><a href="./smoking-prevention.html">Профілактика тютюнопаління</a></li>
                                 <li><a href="./self-education.html">Самоосвіта</a></li>
+                                <li><a href="./defense-of-ukraine.html">Осередок «Захист України»</a></li>
                             </ul>
                         </li>
                         <li class="menu-children">
@@ -116,18 +117,21 @@ const headerHTML = `
                                 <li><a href="./parentsresource.html">Ресурси для батьків</a></li>
                                 <li><a href="./parentsteachers.html">Поради педагогів батькам</a></li>
                                 <li><a href="./parentsfirstclass.html">Поради для батьків<br>першокласників</a></li>
+                                <li><a href="./parents-cooperation.html">Робота з батьками</a></li>
                             </ul>
                         </li>
                         <li class="menu-children">
                             <a href="#">Інноваційна<br>діяльність</a>
                             <ul>
                                 <li><a href="./mbox.html">M-box</a></li>
+                                <li><a href="./talented-students.html">Робота з обдарованими учнями</a></li>                                
                             </ul>
                         </li> 
                         <li class=""><a href="./distancelaerning.html">Дистанційне<br>навчання</a></li>
                         <li class="menu-children">
                             <a href="#">Новини<br>закладу</a>
                             <ul>
+                                <li><a href="./2026-09-september.html">Вересень-2026</a></li>
                                 <li><a href="./2026-08-august.html">Серпень-2026</a></li>
                                 <li><a href="./2026-07-july.html">Липень-2026</a></li>
                                 <li><a href="./2026-06-june.html">Червень-2026</a></li>
@@ -139,10 +143,10 @@ const headerHTML = `
 								<li><a href="./2025-12-december.html">Грудень-2025</a></li>
                                 <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                 <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
-                                <li><a href="./2025-09-september.html">Вересень-2025</a></li>
                                 <li class="menu-children">
                                     <a href="#">2025 рік</a>
                                     <ul>
+                                        <li><a href="./2025-09-september.html">Вересень-2025</a></li>
                                         <li><a href="./2025-08-august.html">Серпень-2025</a></li>
                                         <li><a href="./2025-07-july.html">Липень-2025</a></li>
                                         <li><a href="./2025-06-june.html">Червень-2025</a></li>
@@ -179,6 +183,7 @@ const headerHTML = `
                                 <li><a href="./mental-health.html">Студія ментального здоров'я</a></li>
                                 <li><a href="./trust-box.html">Скринька довіри</a></li>
                                 <li><a href="./regulatory-documents.html">Нормативно-правові документи</a></li>
+                                <li><a href="./social-worker.html">Сторінка соціального педагога</a></li>
                             </ul>
                         </li>
                         <li class="menu-children">
@@ -208,6 +213,7 @@ const headerHTML = `
                                         <li><a href="./student-rules.html">Правила здобувачів освіти</a></li>
                                         <li><a href="./smoking-prevention.html">Профілактика тютюнопаління</a></li>
                                         <li><a href="./self-education.html">Самоосвіта</a></li>
+                                        <li><a href="./defense-of-ukraine.html">Осередок «Захист України»</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-children">
@@ -216,18 +222,21 @@ const headerHTML = `
                                         <li><a href="./parentsresource.html">Ресурси для батьків</a></li>
                                         <li><a href="./parentsteachers.html">Поради педагогів батькам</a></li>
                                         <li><a href="./parentsfirstclass.html">Поради для батьків<br>першокласників</a></li>
+                                        <li><a href="./parents-cooperation.html">Робота з батьками</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-children">
                                     <a href="#">Інноваційна діяльність</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
                                         <li><a href="./mbox.html">M-box</a></li>
+                                        <li><a href="./talented-students.html">Робота з обдарованими учнями</a></li>
                                     </ul>
                                 </li> 
                                 <li class=""><a href="./distancelaerning.html">Дистанційне навчання</a></li>
                                 <li class="menu-children">
                                     <a href="#">Новини закладу</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+                                        <li><a href="./2026-09-september.html">Вересень-2026</a></li>
                                         <li><a href="./2026-08-august.html">Серпень-2026</a></li>
                                         <li><a href="./2026-07-july.html">Липень-2026</a></li>
                                         <li><a href="./2026-06-june.html">Червень-2026</a></li>
@@ -269,6 +278,7 @@ const headerHTML = `
                                         <li><a href="./mental-health.html">Студія ментального здоров'я</a></li>
                                         <li><a href="./trust-box.html">Скринька довіри</a></li>
                                         <li><a href="./regulatory-documents.html">Нормативно-правові документи</a></li>
+                                        <li><a href="./social-worker.html">Сторінка соціального педагога</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-children">

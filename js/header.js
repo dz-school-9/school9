@@ -131,6 +131,7 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="#">Новини<br>закладу</a>
                             <ul>
+                                <li><a href="./2026-10-october.html">Жовтень-2026</a></li>
                                 <li><a href="./2026-09-september.html">Вересень-2026</a></li>
                                 <li><a href="./2026-08-august.html">Серпень-2026</a></li>
                                 <li><a href="./2026-07-july.html">Липень-2026</a></li>
@@ -142,10 +143,10 @@ const headerHTML = `
                                 <li><a href="./2026-01-january.html">Січень-2026</a></li>
 								<li><a href="./2025-12-december.html">Грудень-2025</a></li>
                                 <li><a href="./2025-11-november.html">Листопад-2025</a></li>
-                                <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                 <li class="menu-children">
                                     <a href="#">2025 рік</a>
                                     <ul>
+                                        <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                         <li><a href="./2025-09-september.html">Вересень-2025</a></li>
                                         <li><a href="./2025-08-august.html">Серпень-2025</a></li>
                                         <li><a href="./2025-07-july.html">Липень-2025</a></li>
@@ -236,6 +237,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#">Новини закладу</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+                                        <li><a href="./2026-10-october.html">Жовтень-2026</a></li>
                                         <li><a href="./2026-09-september.html">Вересень-2026</a></li>
                                         <li><a href="./2026-08-august.html">Серпень-2026</a></li>
                                         <li><a href="./2026-07-july.html">Липень-2026</a></li>

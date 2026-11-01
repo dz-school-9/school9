@@ -146,7 +146,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#">2025 рік</a>
                                     <ul>
-                                        li><a href="./2025-11-november.html">Листопад-2025</a></li>
+                                        <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                         <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                         <li><a href="./2025-09-september.html">Вересень-2025</a></li>
                                         <li><a href="./2025-08-august.html">Серпень-2025</a></li>

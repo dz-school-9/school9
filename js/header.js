@@ -131,21 +131,27 @@ const headerHTML = `
                         <li class="menu-children">
                             <a href="#">Новини<br>закладу</a>
                             <ul>
+                                <li><a href="./2026-12-december.html">Грудень-2026</a></li>
                                 <li><a href="./2026-11-november.html">Листопад-2026</a></li>
                                 <li><a href="./2026-10-october.html">Жовтень-2026</a></li>
                                 <li><a href="./2026-09-september.html">Вересень-2026</a></li>
-                                <li><a href="./2026-08-august.html">Серпень-2026</a></li>
-                                <li><a href="./2026-07-july.html">Липень-2026</a></li>
-                                <li><a href="./2026-06-june.html">Червень-2026</a></li>
-                                <li><a href="./2026-05-may.html">Травень-2026</a></li>
-                                <li><a href="./2026-04-april.html">Квітень-2026</a></li>
-                                <li><a href="./2026-03-march.html">Березень-2026</a></li>
-                                <li><a href="./2026-02-february.html">Лютий-2026</a></li>
-                                <li><a href="./2026-01-january.html">Січень-2026</a></li>
-								<li><a href="./2025-12-december.html">Грудень-2025</a></li>
+                                <li class="menu-children">
+                                    <a href="#">2026 рік</a>
+                                    <ul>
+                                        <li><a href="./2026-08-august.html">Серпень-2026</a></li>
+                                        <li><a href="./2026-07-july.html">Липень-2026</a></li>
+                                        <li><a href="./2026-06-june.html">Червень-2026</a></li>
+                                        <li><a href="./2026-05-may.html">Травень-2026</a></li>
+                                        <li><a href="./2026-04-april.html">Квітень-2026</a></li>
+                                        <li><a href="./2026-03-march.html">Березень-2026</a></li>
+                                        <li><a href="./2026-02-february.html">Лютий-2026</a></li>
+                                        <li><a href="./2026-01-january.html">Січень-2026</a></li>
+                                    </ul>
+                                </li>
                                 <li class="menu-children">
                                     <a href="#">2025 рік</a>
                                     <ul>
+                                        <li><a href="./2025-12-december.html">Грудень-2025</a></li>
                                         <li><a href="./2025-11-november.html">Листопад-2025</a></li>
                                         <li><a href="./2025-10-october.html">Жовтень-2025</a></li>
                                         <li><a href="./2025-09-september.html">Вересень-2025</a></li>
@@ -238,6 +244,7 @@ const headerHTML = `
                                 <li class="menu-children">
                                     <a href="#">Новини закладу</a>
                                     <ul class="list main-menu-mobile main-submenu-mobile">
+                                        <li><a href="./2026-12-december.html">Грудень-2026</a></li>
                                         <li><a href="./2026-11-november.html">Листопад-2026</a></li>
                                         <li><a href="./2026-10-october.html">Жовтень-2026</a></li>
                                         <li><a href="./2026-09-september.html">Вересень-2026</a></li>
